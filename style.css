@@ -16,6 +16,14 @@ nav {
     
 }
 
+.doto {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -47,7 +55,7 @@ nav {
         right: 0;
         width: 50%;
         flex-direction: column;
-        background-color: rgba(2, 40, 53, 0.24);
+        background-color: rgba(2, 40, 53, 0.55);
         border-radius: 2%;
         display: none; /* hide by default */
     }
@@ -55,14 +63,28 @@ nav {
     .nav-links a {
         padding: 1rem;
         text-align: center;
-        border-top: 1px solid #ffffff30;
+font-weight: 700;
+        border-top: 1px solid #61ccea30;
     }
 
     /* Show hamburger */
     .hamburger {
         display: block;
     }
-
+.hero-c{
+    height: 80vh !important;
+    margin: 20px !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+   
+    justify-content: center !important;
+    align-items: center !important  ;
+  
+    
+}
+.hero-r{
+    margin: 20px !important;
+}
     /* Show menu when checkbox is checked */
     #menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
@@ -86,9 +108,65 @@ overflow: hidden;
          /* mountain shadow tone */
   ); 
 }
-img{
-    height: 50%;
-    width: 50%;
+.hero-c img{
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
+    border: #0e5a66 solid 3px;
+    
 }
 /* the moving aurora layer */
+.hero{
+     
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-d{
+    margin-right: 60px;
+}
+.hero-r{
+    margin-left: 60px;
+}
+.hero-c{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    margin-left: 10%;
+
+font-size: 1.3rem;
+}
+.cta1{
+    border: 0;
+     background: #07101d; /* night sky base */
+  background: linear-gradient(
+      -90deg,
+         /* deep night sky */
+      #0b2037aa 20%,      /* dark teal sky */
+            /* transition blue */
+      #0e5a66 90%     /* base aurora teal */
+          /* bright green aurora */
+         /* mountain shadow tone */
+  ); 
+    padding: 3%;
+    color: aliceblue;
+    font-weight: 700;
+  
+}
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+margin: 10px 0 ;
+
+}
+.socials a img{
+    height: 30px;
+    width: 30px;
+    border-radius: 0%;
+border: 0 !important;
+margin-right: 10px;
+}
