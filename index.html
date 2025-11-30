@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home Screen - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style type="text/tailwindcss">
+      @keyframes move-aurora-1 {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(10%, -5%) scale(1.1); }
+      }
+      @keyframes move-aurora-2 {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(-15%, 5%) scale(1.05); }
+      }
+      @keyframes move-aurora-3 {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(5%, 10%) scale(0.95); }
+      }
+      .animate-aurora-1 {
+        animation: move-aurora-1 20s ease-in-out infinite;
+      }
+      .animate-aurora-2 {
+        animation: move-aurora-2 22s ease-in-out infinite;
+      }
+      .animate-aurora-3 {
+        animation: move-aurora-3 18s ease-in-out infinite;
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5b13ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#161022",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="absolute inset-0 z-0 opacity-20">
+<div class="absolute bottom-0 left-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[#2D4F53] blur-[150px] animate-aurora-1"></div>
+<div class="absolute right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[#4C4466] blur-[150px] animate-aurora-2"></div>
+<div class="absolute bottom-[-10%] left-1/4 h-[500px] w-[500px] rounded-full bg-[#3B5974] blur-[150px] animate-aurora-3"></div>
+</div>
+<div class="layout-container flex h-full grow flex-col z-10">
+<div class="flex flex-1 justify-center py-5 md:px-10 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-4 md:px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">John Doe</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Projects</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">About</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-white/5 hover:bg-white/10 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">code</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-white/5 hover:bg-white/10 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">group</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="@container">
+<div class="flex flex-col gap-6 px-4 py-20 @[480px]:gap-8 @[864px]:flex-row-reverse @[864px]:items-center">
+<div class="flex-shrink-0 @[864px]:w-1/3 flex justify-center">
+<div class="w-48 h-48 @[480px]:w-64 @[480px]:h-64 bg-center bg-no-repeat aspect-square bg-cover rounded-full border-2 border-white/10 shadow-lg" data-alt="Professional headshot of John Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRkxeB0gFepGGtiCh_n1oZ-lSTPpanzTveUDcEQkGCCDSAYR3QhAKL_xjhV7DhqXN5Mp9JdF6WafQ5C0fSEM3hXCBz1Xw40v26hwkklorHCBlYhqFiDUaMnuTymLusTCADmjy1CAda_b2d4CD7Sk4qPeUncAaJTcCdecCT09Yx8QoRW_gTreAgjM3TQzspw0DkmPXc4dAb7P6xoFursNY_IUu2abGzhNmsYkwvnIV6_ERyc1KyHRUj8RvrB85CfNnSQgdsBjeElMz_");'></div>
+</div>
+<div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+<div class="flex flex-col gap-2 text-left">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">John Doe, Backend Engineer &amp; System Architect</h1>
+<h2 class="text-white/80 text-base font-normal leading-normal @[480px]:text-lg @[480px]:font-normal @[480px]:leading-relaxed">I build scalable and resilient systems, specializing in cloud infrastructure and distributed APIs. Passionate about creating efficient and elegant backend solutions.</h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+<span class="truncate">View My Work</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-4 py-10">
+<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Technologies &amp; Skills</h3>
+<div class="flex gap-3 p-3 flex-wrap">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">Python</p></div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">Go</p></div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">AWS</p></div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">Docker</p></div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">Kubernetes</p></div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">PostgreSQL</p></div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">Terraform</p></div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">gRPC</p></div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">Kafka</p></div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/5 pl-4 pr-4"><p class="text-white/90 text-sm font-medium leading-normal">CI/CD</p></div>
+</div>
+</div>
+<div class="px-4 py-10">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
+<div class="flex flex-col bg-white/5 rounded-lg overflow-hidden group">
+<div class="aspect-video bg-cover bg-center" data-alt="Abstract code on a computer screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAU_D024X3UFY9AWVmOxZ-CYbNExAkYPf8WaSmsw-JjJoLfCYw4fez0_HAMd6Gbkx7r7lMk5aZ6_tNxqXT0FWiE7B_Z4G1JP9Gz6tWCeThqn62jvDWDRqblF1hX1JW0gsNtWBXNbtdVCBkRLpcPuuhwTT362DvK6ISDXmRrSPski8WgKkgJjjWkkJLgPIxFgoz4rervWFodSyHcrdbGMYwEBRE1Y6PeXgYDxP9NTXhP6EpHp2ZhidOcD5Z5y4n46xy-QnduNVMVsPwP')"></div>
+<div class="p-6 flex flex-col flex-1">
+<h4 class="text-lg font-bold text-white">Distributed Task Queue</h4>
+<p class="text-white/70 mt-2 text-sm leading-relaxed flex-1">A high-throughput, fault-tolerant task queue system built with Go and Kafka for processing asynchronous jobs at scale.</p>
+<div class="flex gap-2 mt-4 flex-wrap">
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">Go</span>
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">Kafka</span>
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">PostgreSQL</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col bg-white/5 rounded-lg overflow-hidden group">
+<div class="aspect-video bg-cover bg-center" data-alt="Cloud infrastructure diagram on a digital whiteboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKRPpY7hpztt35Oktvb9kWfjUd2M2UDEUB461Ws0tSyV-kvRa0K749mVww1FcVvZuEswAT-6llP_fMI8y7OmHnCw-8XG22BQF7pijJuS0EBwWLPsnjaSFNfkGaaTiyuxmf9PKDsEJzl3LHv49F3z_ITUwh7PfH1c5f5bmPmXkfxdIdzVkUpmEN5zOxT0jp1CkwQtpMEO-PDBtLeF3RMigy6vbMioIqHR14qqiUcmMwdVqEng1VeaWJJcPc2VFIBtN8iX_ncpNVTuYa')"></div>
+<div class="p-6 flex flex-col flex-1">
+<h4 class="text-lg font-bold text-white">Serverless API Platform</h4>
+<p class="text-white/70 mt-2 text-sm leading-relaxed flex-1">A serverless REST API for a data analytics platform, deployed on AWS Lambda with API Gateway and DynamoDB.</p>
+<div class="flex gap-2 mt-4 flex-wrap">
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">Python</span>
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">AWS Lambda</span>
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">DynamoDB</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col bg-white/5 rounded-lg overflow-hidden group md:col-span-2">
+<div class="aspect-video bg-cover bg-center" data-alt="Code editor showing Infrastructure as Code configuration" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpyScCxwopLe0WB3fPw_VLkrexUYf8n9m_FsUkgitIXSOMKeMJtqzUF8l8GM8g4_VkPe7SIN9fzuvUhoxLd4ksVsomPK8UYOIY1KSpFt08F1nu9kbyDPpyLrQepxwwsY5m6l3co2jDAYnA29gPoQXnksJFoX1mVvIYuRrJCk_bx4K-vSVchvUszhJmouCh-c2ecYL24-b8jMNfawPIspVbOBIF2weHJih8tcS40EUd2NupH9QG6kjJisYwlLZlFFh0yjWvuF6a_ZEO')"></div>
+<div class="p-6 flex flex-col flex-1">
+<h4 class="text-lg font-bold text-white">Infrastructure as Code Pipeline</h4>
+<p class="text-white/70 mt-2 text-sm leading-relaxed flex-1">Automated deployment of containerized applications to Kubernetes using a CI/CD pipeline with Terraform and GitHub Actions.</p>
+<div class="flex gap-2 mt-4 flex-wrap">
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">Terraform</span>
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">Kubernetes</span>
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">Docker</span>
+<span class="text-xs font-medium text-primary/80 bg-primary/10 px-2 py-1 rounded-full">GitHub Actions</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
