@@ -1,21 +1,7 @@
 
-
-
-body{
-    margin: 0;
+:root {
+  --nav-height: 64px; /* change if you make nav taller/shorter */
 }
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5%;
-    background-color: rgba(2, 40, 53, 0.95);
-    color: azure;
-    font-size: 1.2rem;
-    position: relative;
-    
-}
-
 .doto {
   font-family: "Doto", sans-serif;
   font-optical-sizing: auto;
@@ -24,10 +10,54 @@ nav {
   font-variation-settings:
     "ROND" 0;
 }
+/* Fixed nav */
+nav{
+  position: fixed;      /* keep at top */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+ background-color:#052e3597;
+ 
+
+  color: #ffffff; /* text color */
+
+  font-size: 1.2rem;
+  z-index: 9999;        /* sit above other content */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  backdrop-filter: blur(4px); /* optional nice touch */
+}
+
+/* make sure page content isn't hidden behind the fixed nav */
+body {
+  
+    background-color: #052e35;
+  margin: 0;
+  padding-top: var(--nav-height); /* push content below nav */
+}
+
+/* nav links (desktop) */
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+
+
+
+
+
 .nav-links {
     display: flex;
-    justify-content: space-around;
-    width: 40%;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 2%;
+    width: 60%;
 }
 
 .nav-link {
@@ -79,16 +109,16 @@ width: 100%;
 
 /* Media query for mobile */
 @media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        flex-direction: column;
-        background-color: rgba(2, 40, 53, 0.55);
-        border-radius: 2%;
-        display: none; /* hide by default */
-    }
+   .nav-links {
+    position: absolute;
+    top: var(--nav-height); /* drop-down starts below fixed nav */
+    right: 0;
+    width: 30%;
+    border-radius: 1%;
+    flex-direction: column;
+    display: none; /* hidden by default on small screens */
+    background-color: rgba(2, 40, 53, 0.365);
+  }
 
     .nav-links a {
         padding: 1rem;
@@ -119,6 +149,10 @@ font-weight: 700;
     #menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
     }
+    .nav-links {
+  transition: max-height 0.28s ease, opacity 0.18s ease;
+  overflow: hidden;
+}
 }
 
 .aurora {
@@ -128,7 +162,7 @@ overflow: hidden;
 
   background: #07101d; /* night sky base */
   background: linear-gradient(
-      40deg,
+      -40deg,
       #0a1424 0%,   
       #0a1424 10%,    /* deep night sky */
       #0b2037 20%,      /* dark teal sky */
@@ -199,4 +233,132 @@ margin: 10px 0 ;
     border-radius: 0%;
 border: 0 !important;
 margin-right: 10px;
+}
+
+
+.aurora-lin {
+  width: 100%;
+  height: 130vh;
+overflow: hidden;
+background: linear-gradient(
+  0deg,
+  #07101d 0%,    /* matches hero's deep top shadow */
+  #091726 25%,   /* soft, subtle navy */
+  #0b2130 60%,   /* slight aurora tone */
+  #0d2a38 100%   /* smooth blending */
+);
+
+
+display: flex;
+flex-direction: column;
+color: aliceblue; 
+align-items: center;
+
+}
+
+.about-c{
+    width: 70%;
+    text-align: center;
+    
+}
+
+.aurora-lin h3{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.aurora-lin h2{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top:var(--nav-height);
+}
+.gradient-underline{
+    position: relative;
+}
+
+
+.gradient-underline::after{
+   content:'';
+    position: absolute;
+    width: 0%;
+    
+    bottom: -2px;
+    left: 0;
+     height: 2px;
+  background: linear-gradient(
+    -40deg,
+    #0a1424 0%,   
+    #0a1424 10%,   
+    #0b2037 20%,   
+    #000000 35%,   
+    #5bb2c0 90%
+  );
+  transition: width 0.3s ease;
+}
+
+.gradient-underline:hover::after {
+ width: 50%;
+ 
+}
+
+.about-c p{
+    font-size: 1.3rem;
+}
+
+.glass{
+   background: linear-gradient(
+  135deg,
+  rgba(255, 255, 255, 0.06) 0%,
+  rgba(255, 255, 255, 0.03) 60%,
+  rgba(255, 255, 255, 0.01) 100%
+);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.10);
+
+padding: 0 2%;
+border-radius: 14px;
+
+}
+
+.light{
+   background: linear-gradient(
+  135deg,
+ 
+  rgba(11, 79, 89, 0.769),
+  rgba(40, 211, 237, 0.929),
+  rgb(36, 152, 169)
+);
+
+border: 2px solid rgba(78, 255, 247, 0.25); /* soft teal glow */
+box-shadow:
+  0 0 12px rgba(78, 255, 247, 0.3),
+  0 0 25px rgba(78, 255, 247, 0.15);
+border-radius: 14px;
+
+
+   color: #013037;
+
+}
+
+.cta{
+  
+    margin: 2% ;
+    display: flex;
+width: 50%;
+   
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 1%;
+}
+
+.cta button{
+    margin-left: 2%;
+    font-size: 1.1rem;
+    border-radius: 14px !important;
+}
+.cta p{
+    font-weight: 700;
+    font-size: 2rem;
+   
 }
