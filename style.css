@@ -254,7 +254,7 @@ align-items: center;
     text-align: center;
     
 }
-section{
+main{
     overflow: hidden;
 background: linear-gradient(
   0deg,
@@ -346,21 +346,46 @@ border-radius: 14px;
   
     margin: 2% ;
     display: flex;
-width: 50%;
-   
+    flex-direction: column;
+width: 60%;
+   padding: 0%;
    justify-content: center;
    align-items: center;
-   flex-wrap: wrap;
-   padding: 1%;
+  
 }
 
 .cta button{
-    margin-left: 2%;
-    font-size: 1.1rem;
+    margin: 0.5%;
+    font-size: 1rem;
     border-radius: 14px !important;
 }
 .cta p{
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1rem;
+   margin: 0%;
    
+}
+.cta h3{
+    margin-bottom: 0.5%;
+    margin-top: 0.2% !important;
+}
+
+.skill{
+    height: 100vh;
+   
+}
+.tskill{
+     display: flex;
+
+   
+}
+.si{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+}
+.si img{
+   width: 60%; 
+  height: 60%;
 }
