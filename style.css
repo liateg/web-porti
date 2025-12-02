@@ -433,3 +433,75 @@ footer h4{
   padding: 1%;
   font-weight: 700;
 }
+
+/* /////////////////////////////////////////// */
+.projects-section {
+  padding: 2rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;          /* allow multiple rows */
+  gap: 2rem;                /* space between projects */
+  justify-content: center;  /* center projects horizontally */
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background: rgba(202, 242, 241, 0.733);
+  backdrop-filter: blur(10px);  /* glass effect */
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 350px;        /* width per card */
+  flex: 1 1 300px;         /* flexible growth/shrink */
+  padding: 1rem;
+   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.pimg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contents {
+  margin-top: 1rem;
+ color: #1a4445;
+}
+
+.pstack {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pstack span {
+  background: rgba(2, 47, 45, 0.463);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: azure;
+}
+
+.projects-section h2{
+font-weight: 700;
+text-align: center;
+font-size: 3rem;
+color: aliceblue;
+}
+
+.expgithub{
+  display: flex;
+
+}
+.expgithub img{
+  width: 10%;
+  height: 10%;
+}
+
+.expgithub a{
+  color: #114a4b;
+  padding: 2%;
+}
