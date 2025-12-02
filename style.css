@@ -505,3 +505,34 @@ color: aliceblue;
   color: #114a4b;
   padding: 2%;
 }
+
+.cta3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2%;
+  border-radius: 0;
+  color: #ffffff;
+  height: auto;
+  align-items: center;
+}
+
+.dcv{
+
+  color: #58b9ba;
+  text-decoration: none;
+  background-color:#073738; 
+  padding: 0.5%;
+  height: 80%;
+  margin-left: 2%;
+  box-shadow:  0 0 12px rgba(78, 255, 247, 0.3),
+  0 0 25px rgba(78, 255, 247, 0.15);
+}
+
+.dcv.dcv:hover{
+  border: #073738 solid 1px;
+  border-radius: 5px;
+    color: #073738;
+
+  background-color: #58b9ba;
+}
