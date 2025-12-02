@@ -153,7 +153,14 @@ font-weight: 700;
   transition: max-height 0.28s ease, opacity 0.18s ease;
   overflow: hidden;
 }
+
+.li,.si{
+  width: 25% !important;
 }
+}.cta h3{
+  font-size: 1.5rem !important;
+}
+
 
 .aurora {
   width: 100%;
@@ -177,6 +184,9 @@ overflow: hidden;
     width: 100%;
     border-radius: 50%;
     border: #0e5a66 solid 3px;
+    box-shadow:
+  0 0 12px rgba(78, 255, 247, 0.3),
+  0 0 25px rgba(78, 255, 247, 0.15);
     
 }
 /* the moving aurora layer */
@@ -219,7 +229,13 @@ font-size: 1.3rem;
     padding: 3%;
     color: aliceblue;
     font-weight: 700;
+    border-radius: 5px;
+    transition: 0.15ms;
   
+}
+.cta1:hover{
+  cursor: pointer;
+border: #5bb2c0 solid 1px;
 }
 .socials{
     display: flex;
@@ -233,7 +249,10 @@ margin: 10px 0 ;
     border-radius: 0%;
 border: 0 !important;
 margin-right: 10px;
+
+
 }
+
 
 
 .aurora-lin {
@@ -264,12 +283,12 @@ background: linear-gradient(
   #0d2a38 100%   /* smooth blending */
 );
 }
-.aurora-lin h3{
+.aurora-lin h3,.skill h3{
     font-weight: 700;
     font-size: 2rem;
 }
 
-.aurora-lin h2{
+.aurora-lin h2,.skill h2{
     font-weight: 700;
     font-size: 3rem;
     margin-top:var(--nav-height);
@@ -285,7 +304,7 @@ background: linear-gradient(
     width: 0%;
     
     bottom: -2px;
-    left: 0;
+    left: 25%;
      height: 2px;
   background: linear-gradient(
     -40deg,
@@ -344,21 +363,18 @@ border-radius: 14px;
 
 .cta{
   
-    margin: 2% ;
+    margin: 3% ;
     display: flex;
     flex-direction: column;
-width: 60%;
+width: 80%;
    padding: 0%;
    justify-content: center;
    align-items: center;
+   
   
 }
 
-.cta button{
-    margin: 0.5%;
-    font-size: 1rem;
-    border-radius: 14px !important;
-}
+
 .cta p{
     font-weight: 700;
     font-size: 1rem;
@@ -366,26 +382,54 @@ width: 60%;
    
 }
 .cta h3{
-    margin-bottom: 0.5%;
+    margin-bottom: 0.5% !important;
     margin-top: 0.2% !important;
+    
+text-align: center;
 }
 
 .skill{
     height: 100vh;
+    flex-direction: column;
+color: aliceblue; 
+margin-top: var(--nav-height);
    
 }
-.tskill{
+.skill h2,.skill h3{
+  text-align: center;
+}
+.tskill,.lskill{
      display: flex;
 
-   
+   flex-wrap: wrap;
+   justify-content: center;
 }
-.si{
+.si,.li{
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #ffffff;
+    width: 12%;
 }
-.si img{
+.si img,.li img{
    width: 60%; 
   height: 60%;
+}
+
+footer{
+  background-color: #02202d;
+  color: #c1ecfe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer h4{
+  margin-bottom: 0;
+}
+
+.cta2{
+  color: #0e5a66;
+  font-size: 1.5rem;
+  padding: 1%;
+  font-weight: 700;
 }
