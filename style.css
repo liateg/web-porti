@@ -240,7 +240,7 @@ nav{
 /* -------- ABOUT SECTION -------- */
 .aurora-lin {
   width: 100%;
-  height: 130vh;
+ 
   display: flex;
   flex-direction: column;
   color: aliceblue; 
@@ -356,7 +356,7 @@ main{
 
 /* -------- SKILLS -------- */
 .skill{
-    height: 100vh;
+   
     flex-direction: column;
     color: aliceblue; 
     margin-top: var(--nav-height);
@@ -370,6 +370,7 @@ main{
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
+     margin-bottom: 3%;
 }
 
 .si,.li{
