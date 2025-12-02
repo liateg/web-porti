@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">LT</div>
+
+      <!-- Hamburger checkbox -->
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- Hamburger icon -->
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <div class="nav-links doto">
+        <a class="nav-link active" href="home.html#hero">Home</a>
+        <a class="nav-link" href="home.html#about-me">About Me</a>
+        <a class="nav-link" href="home.html#skill">Skill</a>
+        <a class="nav-link" href="exprtianse.html#projects">Projects</a>
+        <a class="nav-link" href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <main>
+      <section class="projects-section">
+        <h2 class="doto">My Projects</h2>
+  <div class="projects-container">
+    <div class="project glass">
+      <div class="pimg">
+        <img src="images/api-key.png" alt="API Key Management Project" />
+      </div>
+      <div class="contents">
+        <h3 class="ptitle">API Key Management System</h3>
+        <p class="role">Personal Project</p>
+        <p>Backend</p>
+        <div class="pstack">
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>BetterAuth</span>
+        </div>
+        <p class="pdescription">
+          A lightweight, self-hosted backend service for managing developer API keys. Users authenticate via Better Auth, then generate a single long-lived API key per user. The service stores only the hashed key and metadata in MongoDB; raw keys are returned only once on creation.
+        </p>
+       <div class="expgithub">
+         <img src="images/right-arrow-angle-of-two-shapes-svgrepo-com.svg" alt="arrow">
+        <a href="https://github.com/liateg/api-key-management-service" target="_blank">Explore More on GitHub</a>
+       </div>
+      </div>
+    </div>
+
+    <!-- Repeat other projects here -->
+     <div class="project glass">
+      <div class="pimg">
+        <img src="images/kechachigar.png" alt="Ke Chachi Gar Podcast Website" />
+      </div>
+      <div class="contents">
+        <h3 class="ptitle">Ke Chachi Gar Podcast Website</h3>
+        <p class="role">Client Project</p>
+        <p>Website</p>
+        <div class="pstack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Tailwind CSS</span>
+          <span>JS</span>
+        </div>
+        <p class="pdescription">
+          Ke Chachi Gar is a podcast website where listeners can explore episodes, learn about the hosts, and stay updated on new releases. The site provides a clean, easy way to access all podcast content in one place.
+        </p>
+       <div class="expgithub">
+         <img src="images/right-arrow-angle-of-two-shapes-svgrepo-com.svg" alt="arrow">
+        <a href="https://kechachigarpodcast.com/" target="_blank">Visit Website</a>
+       </div>
+      </div>
+    </div>
+
+     <div class="project glass">
+      <div class="pimg">
+        <img src="images/eventify.png" alt="Eventify" />
+      </div>
+      <div class="contents">
+        <h3 class="ptitle">Eventify</h3>
+        <p class="role">Personal Project</p>
+        <p>Web App</p>
+        <div class="pstack">
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>Postgres</span>
+          <span>JWT</span>
+          <span>EJS</span>
+          <span>CSS</span>
+        </div>
+        <p class="pdescription">
+          A real-time ticketing system backend with JWT auth, Telebirr & M-Pesa payments, WebSockets for live updates, and QR-based ticket validation. Built with Node.js, Express, and Prisma as a production-style SaaS MVP.
+        </p>
+        <div class="expgithub">
+         <img src="images/right-arrow-angle-of-two-shapes-svgrepo-com.svg" alt="arrow">
+        <a href="https://github.com/liateg/Eventify" target="_blank">Explore More on GitHub</a>
+       </div>
+      </div>
+    </div>
+
+     <div class="project glass">
+      <div class="pimg">
+        <img src="images/generate an image with taleblu aurora gradient (light bacground) background that that says Been Ther make sure the fonts are visible and readable.jpg" alt="Been There" />
+      </div>
+      <div class="contents">
+        <h3 class="ptitle">Been There</h3>
+        <p class="role">Personal Project</p>
+        <p>Web App</p>
+        <div class="pstack">
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>Postgres</span>
+          <span>EJS</span>
+          <span>CSS</span>
+        </div>
+        <p class="pdescription">
+          Been There is a family travel tracker that helps you record trips and easily see which destinations each family member has visited. It keeps everyone's journeys organized in one place.
+        </p>
+        <div class="expgithub">
+         <img src="images/right-arrow-angle-of-two-shapes-svgrepo-com.svg" alt="arrow">
+        <a href="https://github.com/liateg/BeenThere2" target="_blank">Explore More on GitHub</a>
+       </div>
+      </div>
+    </div>
+
+    <div class="project glass">
+      <div class="pimg">
+        <img src="images/plms.jpg" alt="PLMS" />
+      </div>
+      <div class="contents">
+        <h3 class="ptitle">Personalized Learning Management System</h3>
+        <p class="role">Team Project</p>
+        <p>Web App</p>
+        <div class="pstack">
+          <span>Django</span>
+          <span>SQLite</span>
+          <span>TensorFlow</span>
+        </div>
+        <p class="pdescription">
+          A Grade 12 learning platform designed to support national exam preparation through personalized study suggestions. I worked on the backend and machine learning systems that power the recommendation engine.
+        </p>
+       <div class="expgithub">
+         <img src="images/right-arrow-angle-of-two-shapes-svgrepo-com.svg" alt="arrow">
+        <a href="https://github.com/liateg/BeenThere2" target="_blank">Explore More on GitHub</a>
+       </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+    </main>
+  </body>
+</html>
